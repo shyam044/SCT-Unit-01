@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCT Unit-01</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 { color: #0077cc; margin: 1.6rem 0 1rem; font-size: 1.4rem; }
+    ul { margin: 0.3rem 0 1rem 1rem; padding-left: 1rem; list-style: disc outside; }
+    ul.nested { list-style: circle outside; padding-left: 1rem; margin-top: 0.3rem; }
+    ul.shallow { list-style: square outside; padding-left: 1rem; margin-top: 0.2rem; }
+    li { margin-bottom: 0.35rem; }
+    @media (max-width: 768px) {
+      body { font-size: 0.95rem; }
+      header { font-size: 1.2rem; padding: 0.8rem 0.5rem; }
+      .container { padding: 0.9rem; margin: 1.2rem auto; }
+      h2 { font-size: 1.2rem; margin-top: 1.2rem; }
+      ul { margin-left: 0.6rem; padding-left: 0.8rem; }
+      ul.nested { padding-left: 0.8rem; }
+      ul.shallow { padding-left: 0.6rem; }
+    }
+    @media print { .container { page-break-after: always; } }
+    a:focus, button:focus, input:focus { outline: 3px solid rgba(0,119,204,0.35); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>1)Networking Components:</h2>
+    <ul>
+      <li>i)Switches:
+        <ul class="nested">
+          <li>Switches are used to connect various devices simultaneously</li>
+          <li>It works in data link layer</li>
+          <li>switches are cheaper than Routers</li>
+        </ul>
+      </li>
+      <li>ii)Routers:
+        <ul class="nested">
+          <li>Routers are used to connect various networks simultaneously</li>
+          <li>It works in Network Layer</li>
+          <li>Routers are expensive than switches</li>
+        </ul>
+      </li>
+      <li>iii)Hub:
+        <ul class="nested">
+          <li>Hub is a Hardware device used to connect multiple devices in the Network</li>
+          <li>It works in Physical Layer</li>
+        </ul>
+      </li>
+      <li>iv)Client:
+        <ul class="nested">
+          <li>Devices used by the people to access the Network Services</li>
+        </ul>
+      </li>
+      <li>V)Server:
+        <ul class="nested">
+          <li>Client access the resources from the servers</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>2)Benefits of Networks:</h2>
+    <ul>
+      <li>i)Resource Sharing:
+        <ul class="nested">
+          <li>Multiple users share files, Hardware and Software Applications easily</li>
+          <li>It reduces the duplication of resources</li>
+        </ul>
+      </li>
+      <li>ii)Scalability:
+        <ul class="nested">
+          <li>New devices and users can be added easily</li>
+        </ul>
+      </li>
+      <li>iii)Availability and Reliability:
+        <ul class="nested">
+          <li>It stores duplicate copies of data</li>
+          <li>In case of Failure, the data is still safe which makes it more reliable and highly available</li>
+        </ul>
+      </li>
+      <li>iv)Cost Effectiveness:
+        <ul class="nested">
+          <li>Sharing the Resources reduces the equipment cost</li>
+        </ul>
+      </li>
+      <li>V)Communication:
+        <ul class="nested">
+          <li>It allows users to communicate by using emails, messages, etc...</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>3)OSI Model:</h2>
+    <ul>
+      <li>OSI stands for Open System Interconnection</li>
+      <li>The OSI Model consists of 7 Layers
+        <ul class="nested">
+          <li>Physical Layer</li>
+          <li>Data Link Layer</li>
+          <li>Network Layer</li>
+          <li>Transport Layer</li>
+          <li>Session Layer</li>
+          <li>Presentation Layer</li>
+          <li>Application Layer</li>
+        </ul>
+      </li>
+
+      <li>i) Physical Layer:
+        <ul class="nested">
+          <li>Physical Layer is Layer 1 in the OSI Model</li>
+          <li>It is responsible for the physical connection between the devices.</li>
+        </ul>
+      </li>
+
+      <li>ii) Data Link Layer:
+        <ul class="nested">
+          <li>Data Link Layer is Layer 2 in the OSI Model</li>
+          <li>It is responsible for the node-to-node transmission of data</li>
+        </ul>
+      </li>
+
+      <li>iii) Network Layer:
+        <ul class="nested">
+          <li>Network Layer is Layer 3 in the OSI Model</li>
+          <li>It is responsible for the host-to-host transmission of data</li>
+        </ul>
+      </li>
+
+      <li>iv) Transport Layer:
+        <ul class="nested">
+          <li>Transport Layer is Layer 4 in the OSI Model</li>
+          <li>It is responsible for the end-to-end transmission of data</li>
+        </ul>
+      </li>
+
+      <li>v) Session Layer:
+        <ul class="nested">
+          <li>Session Layer is Layer 5 in the OSI Model</li>
+          <li>It is responsible for establishing, managing and terminating the sessions</li>
+        </ul>
+      </li>
+
+      <li>vi) Presentation Layer:
+        <ul class="nested">
+          <li>Presentation Layer is Layer 6 in the OSI Model</li>
+          <li>Presentation Layer is also called the Transition Layer</li>
+        </ul>
+      </li>
+
+      <li>vii) Application Layer:
+        <ul class="nested">
+          <li>Application Layer is Layer 7 in the OSI Model</li>
+          <li>Application creates the data</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>4)TCP/IP Model:</h2>
+    <ul>
+      <li>TCP/IP stands for Transmission Control Protocol/Internet Protocol</li>
+      <li>The TCP/IP Model consists of 4 Layers
+        <ul class="nested">
+          <li>Physical Layer</li>
+          <li>Data Link Layer</li>
+          <li>Network Layer</li>
+          <li>Transport Layer</li>
+          <li>Application Layer</li>
+        </ul>
+      </li>
+
+      <li>i) Physical Layer:
+        <ul class="nested">
+          <li>Physical Layer is Layer 1 in the TCP/IP Model</li>
+          <li>It is responsible for the physical connection between the devices.</li>
+        </ul>
+      </li>
+
+      <li>ii) Data Link Layer:
+        <ul class="nested">
+          <li>Data Link Layer is Layer 2 in the TCP/IP Model</li>
+          <li>It is responsible for the node-to-node transmission of data</li>
+        </ul>
+      </li>
+
+      <li>iii) Network Layer:
+        <ul class="nested">
+          <li>Network Layer is Layer 3 in the TCP/IP Model</li>
+          <li>It is responsible for the host-to-host transmission of data</li>
+        </ul>
+      </li>
+
+      <li>iv)Transport Layer:
+        <ul class="nested">
+          <li>Transport Layer is Layer 4 in the TCP/IP Model</li>
+          <li>It is responsible for the end-to-end transmission of data</li>
+        </ul>
+      </li>
+
+      <li>v) Application Layer:
+        <ul class="nested">
+          <li>Application Layer is Layer 5 in the TCP/IP Model</li>
+          <li>Application creates the data</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>5)Elements of Cybersecurity:</h2>
+    <ul>
+      <li>Cybersecurity refers to the protection of data from unauthorized access and cyberattacks</li>
+      <li>The main goal of cybersecurity is to provide the CIA
+        <ul class="nested">
+          <li>C stands for Confidentiality</li>
+          <li>I stands for Integrity</li>
+          <li>A stands for Availability</li>
+        </ul>
+      </li>
+
+      <li>a)Information Security:
+        <ul class="nested">
+          <li>It protects the data during sending and storing from unauthorized access and cyberattacks</li>
+          <li>It ensures the CIA</li>
+        </ul>
+      </li>
+
+      <li>b)Network Security:
+        <ul class="nested">
+          <li>It protects the Network Infrastructure from unauthorized access and cyberattacks</li>
+          <li>It ensures secure data transmission between sender and receiver</li>
+        </ul>
+      </li>
+
+      <li>c)Application Security:
+        <ul class="nested">
+          <li>It protects the Software Applications from unauthorized access and cyberattacks</li>
+        </ul>
+      </li>
+
+      <li>d)OPSEC:
+        <ul class="nested">
+          <li>OPSEC stands for Operational Security</li>
+          <li>It protects the sensitive Information from unauthorized access and cyberattacks</li>
+        </ul>
+      </li>
+
+      <li>e)Cloud Security:
+        <ul class="nested">
+          <li>It protects the cloud-based resources and data from unauthorized access and cyberattacks</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>6)Cyber Security Services and Objectives:</h2>
+    <ul>
+      <li>a)Confidentiality:
+        <ul class="nested">
+          <li>Confidentiality refers to hiding the information from unauthorized access during exchange</li>
+        </ul>
+      </li>
+
+      <li>b)Data Integrity:
+        <ul class="nested">
+          <li>Data Integrity prevents unauthorized modifications to the Information</li>
+          <li>Data Integrity also detects the modifications made</li>
+        </ul>
+      </li>
+
+      <li>c)Availability:
+        <ul class="nested">
+          <li>Data must be easily available to the authorized users</li>
+        </ul>
+      </li>
+
+      <li>d)Authentication:
+        <ul class="nested">
+          <li>Authentication is used to verify the identity of a user or device</li>
+          <li>There are mainly two types of Authentication
+            <ul class="shallow">
+              <li>i)Peer-Entity Authentication</li>
+              <li>ii)Data-Origin Authentication</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>e)Non-Repudiation:
+        <ul class="nested">
+          <li>Non-Repudiation prevents the denial of message transmission between sender and receiver</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>7)Security attacks:</h2>
+    <ul>
+      <li>The attempt that breaks the security of organization information</li>
+      <li>Security attacks are mainly categorized into two types:
+        <ul class="nested">
+          <li>i)passive attacks</li>
+          <li>ii)active attacks</li>
+        </ul>
+      </li>
+
+      <li>i)Passive attacks:
+        <ul class="nested">
+          <li>In passive attacks, it gathers the information without altering the system</li>
+          <li>Passive attacks are mainly categorized into two types:
+            <ul class="shallow">
+              <li>a)Release of Message Contents</li>
+              <li>b)Traffic Analysis</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>ii)Active attacks:
+        <ul class="nested">
+          <li>In Active attacks, it gathers the information by altering the system</li>
+          <li>Active Attacks are mainly categorized into four types:
+            <ul class="shallow">
+              <li>a)Masquerade</li>
+              <li>b)replay</li>
+              <li>c)Modifications of messages</li>
+              <li>d)Denial of Service</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>Other Security Attacks:
+        <ul class="nested">
+          <li>i)Malware:
+            <ul class="shallow">
+              <li>It is a software designed to harm the system</li>
+              <li>It is spread via emails, messages, websites, etc...</li>
+              <li>Malware does not necessarily require the user to spread</li>
+            </ul>
+          </li>
+
+          <li>ii)Spyware:
+            <ul class="shallow">
+              <li>It is a type of Malware designed to steal information secretly</li>
+              <li>It is spread by installing harmful programs</li>
+              <li>Spyware requires the user to spread</li>
+            </ul>
+          </li>
+
+          <li>iii)Worm:
+            <ul class="shallow">
+              <li>It is a type of Malware designed to damage the information</li>
+              <li>It is spread automatically by network connection</li>
+              <li>Worm does not require the user to spread</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>SCT Unit-01</header>
+  <div class="container">
+    <h2>8)Recent security attacks:</h2>
+    <ul>
+      <li>Uber Data 2016:
+        <ul class="nested">
+          <li>Hackers stole 57 million Uber users' personal data in 2016</li>
+          <li>Uber accidentally uploaded login details to GitHub</li>
+          <li>Hackers stole the data from third-party cloud servers</li>
+        </ul>
+      </li>
+
+      <li>Bangladesh Bank Heist 2016:
+        <ul class="nested">
+          <li>Hackers broke into the Bangladesh Bank's system and tried to steal money by sending a fake transfer request</li>
+          <li>They sent a fake Swift message to the bank and successfully transferred 101 million from the bank</li>
+        </ul>
+      </li>
+
+      <li>Indian Debit Card 2016:
+        <ul class="nested">
+          <li>Around 3.2 million debit cards were hacked in India</li>
+          <li>Several Banks, SBI, HDFC, ICICI, Axis, and Yes Bank are affected by this</li>
+          <li>Here, malware was injected into ATM/POS Systems</li>
+        </ul>
+      </li>
+
+      <li>BSE 2025:
+        <ul class="nested">
+          <li>BSE stands for Bombay Stock Exchange</li>
+          <li>They warned the companies to be careful that the hackers from Pakistan are trying to attack India's Banking and Financial Systems</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
